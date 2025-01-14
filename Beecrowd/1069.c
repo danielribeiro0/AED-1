@@ -31,6 +31,7 @@ int extrair(char mina[]) {
     }
   }
 
+  free(p);
   return diamantes;
 }
 
