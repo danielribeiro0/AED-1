@@ -43,10 +43,10 @@ no* buscaEmArv(no *r, int k) {
 void printPre(no *r, int *first) {
   if (r == NULL) return;
   else {
-    if (!first) printf(" ");
+    if (!(*first)) printf(" ");
     printf("%c", r->conteudo);
-    printPre(r->esq, 0);
-    printPre(r->dir, 0);
+    printPre(r->esq, first);
+    printPre(r->dir, first);
   }
 }
 
